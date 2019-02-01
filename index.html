@@ -16,71 +16,17 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
 <style>
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
-img {vertical-align: middle;}
-/* Slideshow container */
-.slideshow-container {
-  max-width: 100%;
-  height: 50%;
-  position: relative;
-  margin: auto;
+img {
+  width: auto ;
+  max-width: 80% ;
+  height: auto ;
+  max-height: 50% ;
+  vertical-align: middle;
 }
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-.active {
-  background-color: #717171;
-}
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-</style>
-<style>
 #demo {
   text-align: center;
-  font-size: 60px;
-  margin-top: 25px;
+  font-size: 40px;
+  margin-top: 0px;
   margin-bottom: -10px;
 }
 </style>
@@ -108,58 +54,14 @@ img {vertical-align: middle;}
 <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
 
   <div class="w3-panel">
-    <center><h1><b>KUCHAMAN<br>MARATHON [2019]</b></h1>
+    <center><h1><b>KUCHAMAN MARATHON [2019]</b></h1>
     <p>Organised by - Shri Balaji Navyuvak Mandal Seva Sansthan, Kuchaman City (Raj.)</p></center>
   </div>
 
   <!-- Slideshow -->
 <center>
- 	<div class="slideshow-container">
-
-	<div class="mySlides fade">
-
-	  <img src="marathon.jpg" style="width:100%, height:100%">
-
-	</div>
-
-	<div class="mySlides fade">
-
-	  <img src="ads.jpg" style="width:100%, height:100%">
-
-	</div>
-
-	
-
-	</div>
+	  <img src="m_run.jpg">
 </center>
-	<br>
-
-	<div style="text-align:center">
-	  <span class="dot"></span> 
-	  <span class="dot"></span> 
-	   
-	</div>
-
-	<script>
-	var slideIndex = 0;
-	showSlides();
-	function showSlides() {
-	  var i;
-	  var slides = document.getElementsByClassName("mySlides");
-	  var dots = document.getElementsByClassName("dot");
-	  for (i = 0; i < slides.length; i++) {
-	    slides[i].style.display = "none";  
-	  }
-	  slideIndex++;
-	  if (slideIndex > slides.length) {slideIndex = 1}    
-	  for (i = 0; i < dots.length; i++) {
-	    dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
-	  setTimeout(showSlides, 2000); // Change image every 2 seconds
-	}
-	</script>
 
 <!-- Display the countdown timer in an element -->
 <div class="w3-center w3-padding-64">
@@ -174,20 +76,34 @@ img {vertical-align: middle;}
       <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Marathon Runs</span>
     </div>
     <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-      <h3>2 Km</h3>
+      <center><h3>3 Km</h3>
+	<p><b>Beti Bachao, Beti Padhao Run</b></p></center>
     </div>
 
     <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-      <h3>3 Km</h3>
+      <center><h3>5 Km</h3>
+	<p><b>Fitness Run</b><br>&nbsp<br></p></center>
     </div>
 
     <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
-      <h3>7 Km</h3>
+<center><h3>7 Km</h3>
+	<p><b>Dream Run</b><br>&nbsp<br></p></center>
     </div>
 
     <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-      <h3>12 Km</h3>
+<center><h3>12 Km</h3>
+	<p><b>Swachh Kuchaman Run</b><br>&nbsp<br></p></center>
     </div>
+  </div>
+
+<!-- Grid -->
+  <div class="w3-row-padding" id="about">
+    <div class="w3-center w3-padding-64">
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Rules</span>
+    </div>
+<center>
+    <img src="rules.jpg">
+</center>
   </div>
 
   <!-- Grid -->
@@ -207,7 +123,7 @@ img {vertical-align: middle;}
         <li class="w3-light-grey w3-padding-24">
 
 <center>
-<a href="https://www.instamojo.com/@kuchamanmarathon/l3d57f0fbb8bb40fe91aba255d606c2d5/" rel="im-checkout" data-behaviour="remote" data-style="flat" data-text="Register Here"></a>
+<a href="https://www.instamojo.com/@kuchamanmarathon/lc3bc5fd058fd47c0b61e412f4b9221c4/" rel="im-checkout" data-behaviour="remote" data-style="flat" data-text="Register Here"></a>
 </center>
 <script src="https://js.instamojo.com/v1/button.js"></script>
           
@@ -245,7 +161,6 @@ img {vertical-align: middle;}
 
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-        <img src="naresh.jpg" alt="Naresh Kumawat" style="width:100%">
         <div class="w3-container">
           <center><h3>Naresh Kumawat</h3>
           <p class="w3-opacity">President</p><center>
@@ -256,7 +171,6 @@ img {vertical-align: middle;}
 
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-        <img src="sumit.jpg" alt="Sumit Somani" style="width:100%">
         <div class="w3-container">
           <center><h3>Sumit Somani</h3>
           <p class="w3-opacity">Secretary</p><center>
@@ -267,7 +181,6 @@ img {vertical-align: middle;}
 
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-        <img src="ravi.jpg" alt="Ravi Gattani" style="width:100%">
         <div class="w3-container">
           <center><h3>Ravi Gattani</h3>
           <p class="w3-opacity">Program Coordinator</p><center>
@@ -278,7 +191,6 @@ img {vertical-align: middle;}
 
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-        <img src="raghav.jpg" alt="Raghav Sarda" style="width:100%">
         <div class="w3-container">
           <center><h3>Raghav Sarda</h3>
           <p class="w3-opacity">Co-coordinator</p><center>
@@ -289,7 +201,6 @@ img {vertical-align: middle;}
 
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-        <img src="ankit.jpg" alt="Ankit Sarda" style="width:100%">
         <div class="w3-container">
           <center><h3>Ankit Sarda</h3>
           <p class="w3-opacity">Co-coordinator</p><center>
@@ -300,7 +211,6 @@ img {vertical-align: middle;}
 
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-        <img src="male.jpg" alt="Sudhir Kaushik" style="width:100%">
         <div class="w3-container">
           <center><h3>Sudhir Kaushik</h3>
           <p class="w3-opacity">Co-coordinator</p><center>
@@ -311,7 +221,6 @@ img {vertical-align: middle;}
 
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-        <img src="shivam.jpg" alt="Shivam Goyal" style="width:100%">
         <div class="w3-container">
           <center><h3>Shivam Goyal</h3>
           <p class="w3-opacity">Media Handler</p><center>
@@ -322,15 +231,34 @@ img {vertical-align: middle;}
 
     <div class="w3-third w3-margin-bottom">
       <div class="w3-card-4">
-        <img src="sunil.jpg" alt="Sunil Sharma" style="width:100%">
         <div class="w3-container">
           <center><h3>Sunil Sharma</h3>
-          <p class="w3-opacity">TREASURER</p><center>
+          <p class="w3-opacity">Treasurer</p><center>
           <p><a href=""><button class="w3-button w3-light-grey w3-block">Contact</button></a></p>
         </div>
       </div>
     </div>
-	
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <div class="w3-container">
+          <center><h3>Laxmikant Bansal</h3>
+          <p class="w3-opacity">Member</p><center>
+          <p><a href=""><button class="w3-button w3-light-grey w3-block">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <div class="w3-card-4">
+        <div class="w3-container">
+          <center><h3>Vipin Agarwal</h3>
+          <p class="w3-opacity">Member</p><center>
+          <p><a href=""><button class="w3-button w3-light-grey w3-block">Contact</button></a></p>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
@@ -350,8 +278,8 @@ var x = setInterval(function() {
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
+  document.getElementById("demo").innerHTML = days + "d:" + hours + "h:"
+  + minutes + "m:" + seconds + "s";
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
